@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+outputs/logs/
+
+# Trained models
+models/*.joblib
+models/*.pkl
+
+# Generated outputs (optional)
+outputs/figures/
+outputs/submission.csv

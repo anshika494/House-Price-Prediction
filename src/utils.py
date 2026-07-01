@@ -110,7 +110,10 @@ def log_metrics(model_name: str, metrics: dict) -> None:
     logger.info(border)
     logger.info(f"  Model : {model_name}")
     for k, v in metrics.items():
-        logger.info(f"  {k:<25}: {v:.6f}")
+        if isinstance(v, (int, float)):
+            logger.info(f"  {k:<25}: {v:.6f}")
+        else:
+            logger.info(f"  {k:<25}: {v}")
     logger.info(border)
 
 

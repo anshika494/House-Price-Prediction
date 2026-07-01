@@ -29,7 +29,6 @@ House_Price_Prediction/
 ├── data/
 │   ├── train.csv               # Training data (1460 samples)
 │   ├── test.csv                # Test data (1459 samples)
-│   ├── sample_submission.csv   # Kaggle submission format
 │   └── download_data.py        # Kaggle API download helper
 │
 ├── notebooks/
@@ -50,7 +49,6 @@ House_Price_Prediction/
 │
 ├── outputs/
 │   ├── figures/               # All saved visualizations (PNG)
-│   ├── logs/                  # Training logs
 │   └── submission.csv         # Kaggle submission
 │
 ├── requirements.txt
@@ -97,7 +95,7 @@ This will:
 - Save the pipeline to `models/house_price_pipeline.joblib`
 - Save all plots to `outputs/figures/`
 
-### 4. Generate Kaggle Submission
+### 4. Generate Output
 
 ```bash
 python -m src.predict
