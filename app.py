@@ -56,6 +56,20 @@ st.markdown("""
         border-right: 1px solid rgba(124, 92, 191, 0.3);
     }
 
+    [data-testid="stSidebar"] h1, 
+    [data-testid="stSidebar"] h2, 
+    [data-testid="stSidebar"] h3, 
+    [data-testid="stSidebar"] h4, 
+    [data-testid="stSidebar"] h5, 
+    [data-testid="stSidebar"] h6,
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] span,
+    [data-testid="stSidebar"] div[data-testid="stWidgetLabel"] p,
+    [data-testid="stSidebar"] .stMarkdown {
+        color: #d1c4e9 !important;
+    }
+
     [data-testid="stSidebar"] .stSlider > div > div > div > div {
         background: #7c5cbf !important;
     }
@@ -196,9 +210,9 @@ st.markdown("""
     }
 
     /* ── Streamlit element overrides ── */
-    .stSlider > label { color: rgba(255,255,255,0.8) !important; }
-    .stSelectbox > label { color: rgba(255,255,255,0.8) !important; }
-    .stNumberInput > label { color: rgba(255,255,255,0.8) !important; }
+    .stSlider > label { color: rgba(255,255,255,0.8); }
+    .stSelectbox > label { color: rgba(255,255,255,0.8); }
+    .stNumberInput > label { color: rgba(255,255,255,0.8); }
     div[data-testid="stMetricValue"] { color: #7c5cbf !important; }
     .stButton > button {
         background: linear-gradient(135deg, #7c5cbf, #e96c7d);
